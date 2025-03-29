@@ -9,7 +9,7 @@ OUTPUT_CSV = 'telegram_messages.csv'
 BACKUP_CSV = 'telegram_messages_backup.csv'
 START_FROM_ID = 0  # 0 - с последнего сообщения, или укажите конкретный ID
 
-# Настройки производительности
+# Настройки производительности (оптимальные для минимизации вылетов парсера) 
 CHUNK_SIZE = 100
 REQUEST_DELAY = 0.5
-MAX_RETRIES = 5
+MAX_RETRIES = 3
